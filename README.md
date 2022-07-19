@@ -13,7 +13,7 @@ Test API -
 
 [QuoteManager- Replit](https://replit.com/@cconover2b/QuoteManager#README.md)
 
-[QuoteManager - Kotlin - YouTube](https://youtu.be/fg9HsW7ig3I)
+[QuoteManager - YouTube](https://youtu.be/fg9HsW7ig3I)
 
 ## **# Development Environment**
 
