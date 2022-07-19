@@ -4,9 +4,9 @@
 
 A super helpful tool to do the following:
 
-- Grab quote data from an API or add your own.
-- Make any final desired changes.
-- Click "Send & View Quote" to send a quote to Google Firestore and then copy and paste the end result to the website and on social media.
+- Grab a quote from an API or add your own.
+- Make any final desired changes to the quote.
+- Click "Send & View Quote" to send the quote to Google Firestore and then copy and paste the end result to the website and on social media.
 
 Check it out directly on the web:
 [QuotesManager](https://quotemanager.glitch.me/)
