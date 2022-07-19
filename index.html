@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>My test page</title>
+  </head>
+  <style>
+    body {
+  background-color: #01132b;
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 1.1em;
+  padding: 1em;
+      text-align: center;
+      color: white;
+}
+      
+    form {
+      /* Center the form on the page */
+      margin: 0 auto;
+      width: 75%;
+      /* Form outline */
+      padding: 1em;
+      padding-bottom: 2.2em;
+      padding-top: 1em;
+      border: 1px solid #cccccc;
+      border-radius: 1em;
+      background-color: #455666;
+      color: white;
+    }
+    
+    form li + li {
+  margin-top: 1em;
+}
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .floatButton {
+      padding: 1em;
+    }
+
+    .formButton {
+      padding: 1em;
+    }
+
+    form li + li {
+      margin-top: 1em;
+    }
+
+    label {
+      /* Uniform size & alignment */
+      display: inline-block;
+      width: 90px;
+      text-align: right;
+    }
+
+    textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+    input,
+    textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: .8em Verdana, Helvetica, sans-serif;
+
+  /* Uniform text field size */
+  width: 85%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: block;
+  border-radius: 25px;
+  /* Match form field borders */
+  border: 1px solid #999999;
+  padding: 0.5em;
+}
+
+    ::placeholder {
+  /* Microsoft Edge */
+  /*   color: red; */
+  font-size: 0.8em;
+  padding-left: 1em;
+  transform: translate3d(0, -2px, 0);
+}
+
+    input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000000;
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  /*   margin-left: 0.5em; */
+  font: 1em Verdana, Helvetica, sans-serif;
+
+  margin: 0 auto;
+  display: block;
+  padding: 0.5em;
+  padding-left: 4em;
+  padding-right: 4em;
+  border-radius: 25px;
+  border: 2px solid white;
+  color: white;
+  background-color: #e82844;
+}
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+    textarea {
+      /* Align multiline text fields with their labels */
+      vertical-align: top;
+
+      /* Provide space to type some text */
+      height: 5em;
+    }
+    
+    .hiden {
+      visibility: hidden;
+      text-align: left;
+      color: white;
+      text-align: center;
+      
+      
+    }
+
+    #feedback {
+      background-color: antiquewhite;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 0.5em;
+      /* make this element invisible until we are ready for it */
+      display: none;
+    }
+    
+    .moveDown {
+      margin-top: 3em;
+    }
+  </style>
+
+  <body>
+    <h1>Quote Manager</h1>
+    <h3>By Craig Conover</h3>
+    <p>
+      Super helpful tool to do the following:
+    </p>
+    <li>Grab quote data from an API or add your own.</li>
+    <li>Make any final desired changes.</li>
+    <li>
+      Click "Send & View Quote" to send quote to Google Firestore and then copy and paste the end result to the website and and on scoial media.
+    </li>
+    <p></p>
+    <button class="floatButton">Grab API Data</button>
+    <p></p>
+    <div id="feedback"></div>
+
+    <form action="/my-handling-form-page" method="post">
+      <ul>
+        <li>
+          <label for="uTitle"></label>
+          <input 
+            type="text" 
+            id="uTitle" 
+            name="user_post_title" 
+            placeholder="Title"/>
+        </li>
+        <li>
+          <label for="uBody"></label>
+          <textarea 
+            id="uBody" 
+            name="use_post_body"
+            placeholder="Thoughts or Feelings"
+            ></textarea>
+        </li>
+        <li class="button">
+          <button 
+            type="submit" 
+            class="formButton" 
+            id="FinalOutputBtn">Send & View Quote</button>
+        </li>
+      </ul>
+    </form>
+    <h2>Final Results:</h2>
+
+    <div class="hiden" id="finalOutput">
+    <h2 id="newTitle"></h2>
+    <p id="newBody"></p>
+    <h3><a></a>Check us out at <a href="https://spiritualcrusade.com/">https://spiritualcrusade.com/</a></h3>
+    <h3><a id="YouTube_and_Podcast_Channels_2"></a>YouTube and Podcast Channels</h3>
+    <p>YouTube Channel: <a href="http://www.youtube.com/c/spiritualcrusade?sub_confirmation=1">http://www.youtube.com/c/spiritualcrusade?sub_confirmation=1</a></p>
+    <p>Come, Follow Me Study - Podcast Channel: <a href="https://anchor.fm/comefollowme">https://anchor.fm/comefollowme</a></p>
+    <p>Podcast Channel: <a href="https://anchor.fm/spiritualcrusade">https://anchor.fm/spiritualcrusade</a></p>
+    <h3><a id="Social_Media_Links_9"></a>Social Media Links</h3>
+    <p>Facebook: <a href="https://www.facebook.com/spiritualcrusade/">https://www.facebook.com/spiritualcrusade/</a></p>
+    <p>Pinterest: <a href="https://www.pinterest.com/spiritualcrusade/">https://www.pinterest.com/spiritualcrusade/</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/spiritualcrusade/">https://www.instagram.com/spiritualcrusade/</a></p>
+    <p>Twitter: <a href="https://twitter.com/spiritualcrusad">https://twitter.com/spiritualcrusad</a></p>
+    <p>Tumblr: <a href="https://spiritualcrusade.tumblr.com/">https://spiritualcrusade.tumblr.com/</a></p>
+    <p>Tumblr: <a href="https://spiritualcrusade.tumblr.com/">https://spiritualcrusade.tumblr.com/</a></p>
+      </div>
+    <script type="module">
+//------------Firestore-------------------------------------------------//
+
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyCiGeCnSIZ_BWaxFbojC472_n3mfzCWrI8",
+        authDomain: "quotes-capture.firebaseapp.com",
+        databaseURL: "https://quotes-capture-default-rtdb.firebaseio.com",
+        projectId: "quotes-capture",
+        storageBucket: "quotes-capture.appspot.com",
+        messagingSenderId: "648640118582",
+        appId: "1:648640118582:web:5261f3d51a7c8a984dbd97"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+
+      import {
+        getFirestore, doc, getDoc, setDoc, collection, addDoc, updateDoc, deleteDoc, deleteField
+      }
+        from "https://www.gstatic.com/firebasejs/9.9.0/firebase-firestore.js";
+
+        const db = getFirestore();
+
+//------------References-------------------------------------------------//
+        let uTitle = document.getElementById("uTitle");
+        let uBody = document.getElementById("uBody");
+
+        let FinalOutputBtn = document.getElementById("FinalOutputBtn");
+        
+//------------Adding Document-------------------------------------------//
+
+        async function AddDocument_CustomID(){
+          var ref = doc(db,"quotes", uTitle.value);
+
+          const docRef = await setDoc(
+            ref, {
+              title: uTitle.value,
+              quote: uBody.value,
+              
+            }
+          )
+          .then(()=>{
+            alert("data added successfully");
+          })
+          .catch((error)=>{
+            alert("Unsuccessful, error:"+ error);
+          });
+        }
+
+//------------Assign Events to Buttons----------------------------------//
+
+      FinalOutputBtn.addEventListener("click", AddDocument_CustomID);
+
+      
+      // get the feedback div element so we can do something with it.
+      const feedbackElement = document.getElementById("feedback");
+      // get the form so we can read what was entered in it.
+      const formElement = document.forms[0];
+      // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+      formElement.addEventListener("submit", function (e) {
+        // stop the form from doing the default action
+        e.preventDefault();
+
+        // let test = "Yesssss";
+        // document.getElementById("uTitle").value = test;
+        
+        document.querySelector("#newTitle").textContent =
+          formElement.user_post_title.value;
+        document.querySelector("#newBody").textContent =
+          formElement.use_post_body.value;
+        
+        
+        // document.getElementById(".hide").style.visibility = "visible";
+        document.querySelector(".hiden").style.visibility = "visible";
+
+      });
+      
+      
+
+      // Button Click
+      const btn = document.querySelector("button");
+      if (btn) {
+        btn.onclick = function () {
+          // api url: https://run.mocky.io/v3/b2772cea-c31a-4630-836c-a4c9853d6132
+          //         "title": "We Can Do Better and Be Better",
+          // "post": "Make your focus on daily repentance so integral to your life that you can exercise the priesthood with greater power than ever before.",
+          // "imageUrl": "https://i0.wp.com/spiritualcrusade.com/wp-content/uploads/2019/04/20190415_191557660_iOS.png?resize=1000%2C628&ssl=1"
+
+          const url =
+            "https://run.mocky.io/v3/b2772cea-c31a-4630-836c-a4c9853d6132";
+          async function output() {
+            const response = await fetch(url);
+            const data = await response.json();
+            console.log(data);
+            const { title, post, imageUrl } = data;
+
+            document.getElementById("uTitle").value = data.title;
+            document.getElementById("uBody").value = post;
+            document.querySelector("#uImg").setAttribute("src", imageUrl);
+
+            console.log(data.title);
+            console.log(post);
+          }
+
+          output();
+        };
+      }
+
+            
+    </script>
+    <script src="firebase.js"></script>
+    
+  </body>
+</html>
