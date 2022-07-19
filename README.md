@@ -8,6 +8,9 @@ Super helpful tool to do the following:
 - Make any final desired changes.
 - Click "Send & View Quote" to send quote to Google Firestore and then copy and paste the end result to the website and and on scoial media.
 
+Check it out diectly on the web: 
+[QuotesManager](https://quotemanager.cconover2b.repl.co/)
+
 Test API -
 [https://run.mocky.io/v3/b2772cea-c31a-4630-836c-a4c9853d6132](https://run.mocky.io/v3/b2772cea-c31a-4630-836c-a4c9853d6132)
 
