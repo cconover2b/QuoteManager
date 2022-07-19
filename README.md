@@ -2,21 +2,23 @@
 
 ## **# Overview**
 
-Super helpful tool to do the following:
+A super helpful tool to do the following:
 
 - Grab quote data from an API or add your own.
 - Make any final desired changes.
-- Click "Send & View Quote" to send quote to Google Firestore and then copy and paste the end result to the website and and on scoial media.
+- Click "Send & View Quote" to send a quote to Google Firestore and then copy and paste the end result to the website and on social media.
 
-Check it out diectly on the web: 
-[QuotesManager](https://quotemanager.cconover2b.repl.co/)
+Check it out directly on the web:
+[QuotesManager](https://quotemanager.glitch.me/)
 
 Test API -
 [https://run.mocky.io/v3/b2772cea-c31a-4630-836c-a4c9853d6132](https://run.mocky.io/v3/b2772cea-c31a-4630-836c-a4c9853d6132)
 
 [QuoteManager- Replit](https://replit.com/@cconover2b/QuoteManager#README.md)
 
-[QuoteManager - YouTube](https://youtu.be/fg9HsW7ig3I)
+[QuoteManager- Glitch](https://glitch.com/edit/#!/quotemanager)
+
+[QuoteManager - YouTube Presentation](https://youtu.be/fg9HsW7ig3I)
 
 ## **# Development Environment**
 
